@@ -1,0 +1,125 @@
+@import 'src/styles/standart';
+
+.spin{
+    margin: auto;
+}
+
+.openPost{
+    flex-grow: 1;
+
+    width: 100%;
+    height: auto;
+    background-color: $white;
+    box-shadow: 0 4px 12px 0 #00000026;
+
+    display: flex;
+    flex-direction: column;
+    //justify-content: space-between;
+    gap: 8px;
+    padding: 16px;
+
+    &__header{
+        display: flex;
+        justify-content: space-between;
+        gap: 8px;
+        //padding: 16px;
+    }
+
+    &__body{
+        & p{
+            padding: 4px 0;
+        }
+        & h3{
+            padding: 4px 0;
+            font-size: 150%;
+            line-height: 150%;
+        }
+    }
+
+    &__headerContentSide{
+        flex-grow: 1;
+    }
+
+    &__headerUserSide{
+        width: 20%;
+        flex-shrink: 0;
+    }
+}
+
+.contentSide{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    &__header{
+        display: flex;
+        gap: 8px;
+    }
+
+    &__title{
+        font-size: 18px;
+        color: $blue;
+    }
+
+    &__likesCount{
+        height: 16px;
+
+        display: flex;
+        align-items: center;
+        gap: 4px;
+
+        &:before{
+            content: url('../../../assets/svg/likeInactive.svg');
+            position: relative;
+            top: 2px;
+        }
+        &--isLiked:before{
+            content: url('../../../assets/svg/likeActive.svg');
+        }
+    }
+
+    &__tagsList{
+        display: flex;
+        gap: 8px;
+    }
+
+    &__tag{
+        color: $greyHard;
+        border: 1px solid;
+        border-radius: 2px;
+
+        padding: 0 4px;
+    }
+
+    &__description{
+        color: $greyHard;
+    }
+}
+
+.userSide{
+    display: flex;
+    justify-content: end;
+    gap: 8px;
+
+    &__column{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 8px;
+        text-align: right;
+    }
+
+    &__userName{
+        font-size: 18px;
+    }
+
+    &__creationTime{
+        color: $greyHard;
+    }
+
+    &__userPic{
+        width: 46px;
+        height: 46px;
+        border-radius: 50%;
+    }
+}

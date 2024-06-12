@@ -1,0 +1,29 @@
+
+.spin{
+    margin: auto;
+}
+
+.postsList{
+    flex-grow: 1;
+
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+
+    &__spin{
+        margin: auto;
+    }
+
+    &__list{
+        width: 100%;
+
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    &__item{}
+}

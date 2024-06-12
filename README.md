@@ -1,1 +1,1 @@
-# blog_kata_fix
+# kata_3-4_react_blog
