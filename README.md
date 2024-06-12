@@ -1,0 +1,1 @@
+# blog_kata_fix
